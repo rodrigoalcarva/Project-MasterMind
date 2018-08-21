@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ranking</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href=" css/jogo_style.css" rel="stylesheet">
+		<script src='javascript/leaderboards.js'></script>
+		<script src='javascript/logout.js'></script>
+
+	</head>
+	<body>
+		<div id="t">
+			<p id="header">The Game:MasterMind</p>
+		</div>
+		<nav id="principal">
+			<a href="jogo.html">
+			<div class="container" id="um">
+				<img alt="jogo" class="icon" src="imagens/icon1.png">
+				<p class="texto">Jogo</p>
+			</div>
+			</a>
+			<a href="regras.html">
+			<div class="container" id="dois">
+				<img alt="livro" class="icon" src="imagens/icon2.png" >
+				<p class="texto">Regras</p>
+			</div></a>
+			<a>
+			<div class="container" id="tres">
+				<img alt="rank" class="icon" src="imagens/icon3.png">
+				<p class="texto">Ranking</p>
+			</div></a>
+			<a href="premios.html">
+			<div class="container" id="quatro">
+				<img alt="cash" class="icon" src="imagens/icon4.png">
+				<p class="texto">Prémios</p>
+			</div></a>
+			<a href="contactos.html">
+			<div class="container" id ="cinco">
+				<img alt="nós" class="icon" src="imagens/icon5.png">
+				<p class="texto">Contactos</p>
+			</div></a>
+			<a onclick="logout()">
+			<div class="container" id="seis">
+				<img alt="sair" class="icon" src="imagens/icon6.png">
+				<p class="texto">Logout</p>
+			</div></a>
+		</nav>
+		<div id="Torneio"><h2> Estastística do último jogo do jogadores:</h2></div>
+		<table id="ranking">
+			<thead>
+				<tr>
+					<th scope="col" id="bod">Username</th>
+					<th scope="col" id="bod1">Modo</th>
+					<th scope="col" id="bod2">Pontuação</th>
+					<th scope="col" id="bod3">Tempo</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<div id="Torneio1"><h2> Jogos jogados por todos os utilizadores:</h2></div>
+		<table id="ranking2">
+			<thead>
+				<tr>
+					<th scope="col" id="bod4">5 Tent</th>
+					<th scope="col" id="bod5">10 Tent</th>
+					<th scope="col" id="bod6">Multiplayer</th>
+					<th scope="col" id="bod7">10Cores</th>
+					<th scope="col" id="bod8">Coutdown 1/5</th>
+					<th scope="col" id="bod9">Coutdown 2/5</th>
+					<th scope="col" id="bod10">Coutdown 1/10</th>
+					<th scope="col" id="bod11">Coutdown 2/10</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="jgsTent1"></td>
+					<td id="jgsTent2"></td>
+					<td id="jgsTent3"></td>
+					<td id="jgsTent4"></td>
+					<td id="jgsTent5"></td>
+					<td id="jgsTent6"></td>
+					<td id="jgsTent7"></td>
+					<td id="jgsTent8"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="Torneio1"><h2> Vitórias e derrotas totais de todos os users:</h2></div>
+		<table id="ranking1">
+			<thead>
+				<tr>
+					<th scope="col" id="bod4">Vitórias</th>
+					<th scope="col" id="bod5">Derrotas</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="Vit"></td>
+					<td id="Derr"></td>
+				</tr>
+			</tbody>
+		</table>
+		<footer><p>Alunos de Tecnologia de Informação | D.I | Introdução às tecnologias Web | 2016/2017</p></footer>
+	</body>
+</html>

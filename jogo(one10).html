@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jogo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="css/jogo_style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<script src='javascript/thegame.js'></script>
+		<script src='javascript/logout.js'></script>
+	</head>
+	<body id="jogo10">
+		<div id="t">
+			<p id="header">The Game:MasterMind</p>
+		</div>
+		<nav id="principal">
+			<a href="jogo.html">
+			<div class="container" id="um">
+				<img alt="jogo" class="icon" src="imagens/icon1.png">
+				<p class="texto">Jogo</p>
+			</div>
+			</a>
+			<a href="regras.html">
+			<div class="container" id="dois">
+				<img alt="livro" class="icon" src="imagens/icon2.png" >
+				<p class="texto">Regras</p>
+			</div></a>
+			<a href="ranking.html">
+			<div class="container" id="tres">
+				<img alt="rank" class="icon" src="imagens/icon3.png">
+				<p class="texto">Ranking</p>
+			</div></a>
+			<a href="premios.html">
+			<div class="container" id="quatro">
+				<img alt="cash" class="icon" src="imagens/icon4.png">
+				<p class="texto">Prémios</p>
+			</div></a>
+			<a href="contactos.html">
+			<div class="container" id ="cinco">
+				<img alt="nós" class="icon" src="imagens/icon5.png">
+				<p class="texto">Contactos</p>
+			</div></a>
+			<a>
+			<div class="container" id="seis">
+				<img alt="sair" class="icon" src="imagens/icon6.png">
+				<p class="texto">Logout</p>
+			</div></a>
+		</nav>
+		<div id="tudo2">
+			<div id="theUser"><p id="theUser1"></p></div>
+			<div id="divide1">
+				<span id="feedBack"></span>
+			</div>
+			<div id="divide2">
+				<span id="textAlea"></span>
+			</div>
+			<audio autoplay loop>
+				<source src="musica/pok.mp3">
+				<source src="musica/pok.ogg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		<div id="tudo">
+			<div id="board">
+				<div id="space">
+					<div id="secret1"></div>
+					<div id="secret2"></div>
+					<div id="secret3"></div>
+					<div id="secret4"></div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a"></div>
+	  				<div class="pretoEbranco" id="b"></div>
+	  				<div class="pretoEbranco" id="c"></div>
+	  				<div class="pretoEbranco" id="d"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a1"></div>
+	  				<div class="pretoEbranco" id="b1"></div>
+	  				<div class="pretoEbranco" id="c1"></div>
+	  				<div class="pretoEbranco" id="d1"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a2"></div>
+	  				<div class="pretoEbranco" id="b2"></div>
+	  				<div class="pretoEbranco" id="c2"></div>
+	  				<div class="pretoEbranco" id="d2"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a3"></div>
+	  				<div class="pretoEbranco" id="b3"></div>
+	  				<div class="pretoEbranco" id="c3"></div>
+	  				<div class="pretoEbranco" id="d3"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a4"></div>
+	  				<div class="pretoEbranco" id="b4"></div>
+	  				<div class="pretoEbranco" id="c4"></div>
+	  				<div class="pretoEbranco" id="d4"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a5"></div>
+	  				<div class="pretoEbranco" id="b5"></div>
+	  				<div class="pretoEbranco" id="c5"></div>
+	  				<div class="pretoEbranco" id="d5"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a6"></div>
+	  				<div class="pretoEbranco" id="b6"></div>
+	  				<div class="pretoEbranco" id="c6"></div>
+	  				<div class="pretoEbranco" id="d6"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a7"></div>
+	  				<div class="pretoEbranco" id="b7"></div>
+	  				<div class="pretoEbranco" id="c7"></div>
+	  				<div class="pretoEbranco" id="d7"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a8"></div>
+	  				<div class="pretoEbranco" id="b8"></div>
+	  				<div class="pretoEbranco" id="c8"></div>
+	  				<div class="pretoEbranco" id="d8"></div>
+					</div>
+				</div>
+				<div class="code0">
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards"><button class="corTentativa" disabled></button></div>
+					<div class="boards1">
+						<div class="pretoEbranco" id="a9"></div>
+	  				<div class="pretoEbranco" id="b9"></div>
+	  				<div class="pretoEbranco" id="c9"></div>
+	  				<div class="pretoEbranco" id="d9"></div>
+					</div>
+				</div>
+				<div id="code1">
+					<button id="check" type="button">Check</button>
+				</div>
+			</div>
+		</div>
+		<div id="tudo1">
+			<div id="metade1">
+				<button id="newGame" type="button">New Game</button>
+				<div id="ccc">
+					<div id="time">
+						<img alt="cronometro" id="cronometro1" src="imagens/alarm-clock.png">
+					</div>
+					<div id="cronometro">
+						<div class="reloj" id="Minutos">00</div>
+						<div class="reloj" id="Segundos">:00</div>
+						<div class="reloj" id="Centesimas">:00</div>
+					</div>
+				</div>
+				<div id="ccc1">
+					<div id="score">
+						<img alt="pontos" src="imagens/scoreboard.png">
+					</div>
+					<div id="score1">
+						<span id="pontu"></span>
+					</div>
+				</div>
+			</div>
+			<div id="metade2">
+				<div id="textoCores">
+					<p> Cores existentes:</p>
+				</div>
+				<div id="cores">
+					<div id="cor1"></div>
+					<div id="cor2"></div>
+					<div id="cor3"></div>
+					<div id="cor4"></div>
+					<div id="cor5"></div>
+					<div id="cor6"></div>
+				</div>
+				<div id="corPreta">
+					<img alt="black" id="black" src="imagens/color_7.gif">
+					<p>Cor certa no local certo</p>
+				</div>
+				<div id="corBranca">
+					<img alt="white" id="white" src="imagens/color_8.gif">
+					<p>Cor certa no local errado</p>
+				</div>
+				<h5>Não há cores repetidas</h5>
+			</div>
+		</div>
+		<footer><p>Alunos de Tecnologia de Informação | D.I | Introdução às tecnologias Web | 2016/2017</p></footer>
+	</body>
+</html>

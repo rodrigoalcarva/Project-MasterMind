@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>register</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="css/jogo_style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<script src='javascript/register.js'></script>
+	</head>
+	<body id="register">
+		<div id="t">
+			<p id="header">The Game:MasterMind</p>
+		</div>
+		<div class="container4">
+			<form name="regi">
+				<p>Username:</p>
+				<div class="form">
+					<input type="text" name="username">
+				</div>
+				<p>Data de Nascimento:</p>
+				<div class="form">
+					<input type="date" name="data">
+				</div>
+				<p>E-mail:</p>
+				<div class="form">
+					<input type="text" name="email">
+				</div>
+				<p>Password:</p>
+				<div class="form">
+					<input type="password" name="password">
+				</div>
+				<input id="regis" type="button" name="saveUsers" value="Regist">
+			</form>
+		</div>
+		<div id="spaceButton">
+			<p> Se está estiver conta clique aqui:</p><button id="logi" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Faça o login</button>
+		</div>
+
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+				<form name="tentUse" class="modal-content animate" action="/action_page.php">
+					<div class="container3">
+						<p>Username:</p>
+						<div class="form">
+							<input id="utilizador" type="text" name="user">
+						</div>
+						<p>Password:</p>
+						<div class="form">
+							<input id="password" type="password" name="pwd">
+						</div>
+						<input id="button" type="button" value="Login"  name="loginB" onclick="thelogin()">
+					</div>
+				</form>
+		</div>
+	</body>
+</html>

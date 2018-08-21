@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<title>regras</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="css/jogo_style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<script src='javascript/logout.js'></script>
+
+	</head>
+	<body id="bregras">
+		<div id="t">
+			<p id="header">The Game:MasterMind</p>
+		</div>
+		<nav id="principal">
+			<a href="jogo.html">
+			<div class="container" id="um">
+				<img alt="jogo" class="icon" src="imagens/icon1.png">
+				<p class="texto">Jogo</p>
+			</div>
+			</a>
+			<a>
+			<div class="container" id="dois">
+				<img alt="livro" class="icon" src="imagens/icon2.png" >
+				<p class="texto">Regras</p>
+			</div></a>
+			<a href="ranking.html">
+			<div class="container" id="tres">
+				<img alt="rank" class="icon" src="imagens/icon3.png">
+				<p class="texto">Ranking</p>
+			</div></a>
+			<a href="premios.html">
+			<div class="container" id="quatro">
+				<img alt="cash" class="icon" src="imagens/icon4.png">
+				<p class="texto">Prémios</p>
+			</div></a>
+			<a href="contactos.html">
+			<div class="container" id ="cinco">
+				<img alt="nós" class="icon" src="imagens/icon5.png">
+				<p class="texto">Contactos</p>
+			</div></a>
+			<a onclick="logout()">
+			<div class="container" id="seis">
+				<img alt="sair" class="icon" src="imagens/icon6.png">
+				<p class="texto">Logout</p>
+			</div></a>
+		</nav>
+		<div id="regras">
+			<h3 id="res">Resumo:</h3>
+			<p>Um jogador escolhe um código, constituido por quatro marcadores de entre seis
+					cores diferentes possíveis, e o outro tenta adivinhar. Existem portanto 1296 = 6^3
+					códigos possíveis. Tem 10 tentativas para o fazer, vencendo quando colocar a combinação
+					de cores certa no tabuleiro. Cada uma das tentativas é avaliada pelo jogador que escolheu o código,
+					que a classifica indicando o número de marcadores que têm uma cor comum com a solução e aqueles que,
+					para além de ter uma cor comum com a solução, se encontram alinhados com esta (na mesma posição).</p>
+					<h3 id="jog">Como Jogar:</h3>
+						<ol>
+							<li>Passo 1:
+								<p>O desafiador deve selecionar um código. Os jogos de tabuleiro do Senha têm uma fileira de buracos
+									separados em uma das extremidades do tabuleiro, escondida sob um defletor. O desafiador deve pegar secretamente
+									alguns pinos coloridos e colocá-los nessa fileira, em qualquer ordem. Este é o código que o desafiado tentará adivinhar.</p></li>
+							<li>Passo 2:
+							<p>O jogadodeve tentar adivinhar o código escondido. Sentado na extremidade oposta do tabuleiro, ele pegará os pinos coloridos
+								maiores e os colocará na fileira mais próxima de buracos maiores. </p></li>
+							<li>Passo 3:
+								<p>O computador dá feedback. Ao lado de cada fileira há um pequeno quadrado com buracos suficientes para quatro
+									pinos pequenos. Estes pinos só vêm em duas cores: branco e vermelho (ou branco e preto, em algumas versões). O computador
+									usa isso para dar pistas sobre quão próximo está o palpite. Ele deve ser honesto e sempre colocar os pinos usando estas instruções</p></li>
+							<li>Passo 4:
+								<p>Repita com a próxima fileira. O desafiado agora tem um pouco de informação. No exemplo, ele tem um pino branco e um vermelho, e dois buracos
+								vazios. Isso significa que, dos quatro pinos que ele colocou, um deles está certo, mas precisa ser movido para um buraco diferente, um deles já
+								 está no lugar certo, e dois deles não pertencem ao código.</p></li>
+							<li>Passo 5:
+								<p>Continue até que o código seja adivinhado ou não haja mais fileiras sobrando. O desafiado continua a fazer suposições usando as informações de todas as dicas
+								anteriores. Se ele conseguir adivinhar o código completo exatamente na ordem certa, ele ganha o jogo. Se não conseguir, e todas as fileiras forem preenchidas,
+								o desafiador ganha. </p></li>
+					</ol></div>
+					<h3 id="h3Videos">Demontração real dos vários jogos</h3>
+					<nav id="principalReg">
+						<div id="buttonVideos1">
+							<p class="textVideos">Video: Jogo 5Tentativas</p>
+							<input id="bVideo1" alt="video" type="image" src="imagens/video-player.png" onclick="document.getElementById('id01').style.display='block'">
+						</div>
+						<div id="buttonVideos2">
+							<p class="textVideos">Video: Jogo 10Cores</p>
+							<input id="bVideo2" alt="video" type="image" src="imagens/video-player.png" onclick="document.getElementById('id02').style.display='block'">
+						</div>
+						<div id="buttonVideos3">
+							<p class="textVideos">Vídeo: Jogo Multiplayer</p>
+							<input id="bVideo3" alt="video" type="image" src="imagens/video-player.png" onclick="document.getElementById('id03').style.display='block'">
+						</div>
+						<div id="buttonVideos4">
+							<p class="textVideos">	Vídeo: Jogo Countdown</p>
+							<input id="bVideo4" alt="video" type="image" src="imagens/video-player.png" onclick="document.getElementById('id04').style.display='block'">
+						</div>
+					</nav>
+					<div id="id01" class="modal">
+					  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+					  <form class="modal-Content animate" action="/action_page.php">
+							<iframe src="https://www.youtube.com/embed/3v-HaJ94Z7E"  allowfullscreen></iframe>
+						</form>
+					</div>
+					<div id="id02" class="modal">
+					  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+					  <form class="modal-Content animate" action="/action_page.php">
+					    <iframe src="https://www.youtube.com/embed/EkHwKvmZmCE"  allowfullscreen></iframe>
+						</form>
+					</div>
+					<div id="id03" class="modal">
+					  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">×</span>
+					  <form class="modal-Content animate" action="/action_page.php">
+					   <iframe src="https://www.youtube.com/embed/RF2lz3kzUCU"  allowfullscreen></iframe>
+						</form>
+					</div>
+					<div id="id04" class="modal">
+					  <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">×</span>
+					  <form class="modal-Content animate" action="/action_page.php">
+					    <iframe src="https://www.youtube.com/embed/cD8niT2Ab2A" allowfullscreen></iframe>
+						</form>
+					</div>
+
+		<footer><p>Alunos de Tecnologia de Informação | D.I | Introdução às tecnologias Web | 2016/2017</p></footer>
+	</body>
+</html>
